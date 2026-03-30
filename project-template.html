@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre del Proyecto - UX/UI Case Study</title>
+    <!-- Mismas fuentes y estilos base que el home -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Estilos específicos para la plantilla de proyectos */
+        .project-hero {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 5% 10%;
+            background: linear-gradient(to bottom, transparent, var(--bg-color)), url('https://picsum.photos/id/20/1920/1080') center/cover;
+            /* Reemplazar con imagen cover del proyecto */
+        }
+
+        .project-hero h1 {
+            font-size: clamp(3rem, 6vw, 5rem);
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .meta-label {
+            font-size: 0.8rem;
+            color: var(--accent-turquoise);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .meta-value {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .project-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 5rem 10%;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        .project-content h2 {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin: 4rem 0 1.5rem 0;
+            border-left: 4px solid var(--accent-turquoise);
+            padding-left: 1rem;
+        }
+
+        .project-content h3 {
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin: 2rem 0 1rem 0;
+        }
+
+        .project-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 2.5rem 0;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .full-width-image {
+            width: 100%;
+            margin: 4rem 0;
+        }
+
+        .full-width-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .next-project {
+            text-align: center;
+            padding: 8rem 0;
+            background-color: #1f1f1f;
+        }
+
+        .next-project .meta-label {
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .next-project h2 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        .next-project a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .next-project a:hover h2 {
+            background: var(--accent-gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="custom-cursor"></div>
+
+    <header>
+        <a href="index.html" class="logo">Victor Oliveros<span class="dot">.</span></a>
+        <a href="mailto:hola@ejemplo.com" class="btn-outlined">Hablemos</a>
+    </header>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <h1>Nombre del Proyecto</h1>
+        <div class="project-meta">
+            <div class="meta-item">
+                <span class="meta-label">Rol</span>
+                <span class="meta-value">Lead Product Designer</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Plataforma</span>
+                <span class="meta-value">iOS & Web App</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Duración</span>
+                <span class="meta-value">12 Semanas</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Industria</span>
+                <span class="meta-value">Fintech</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content (Standard Case Study Structure) -->
+    <div class="project-content">
+
+        <h2>El Contexto</h2>
+        <p>Escribe aquí 1 o 2 párrafos sobre el proyecto. ¿De qué trata la app o el sitio web? ¿Para quién es? Define el
+            escenario general antes de entrar en los problemas. <em>(Por ejemplo: NovaBank es una startup fintech
+                buscando democratizar las inversiones para jóvenes adultos en latam.)</em></p>
+
+        <h2>El Desafío</h2>
+        <p>¿Cuál era el problema principal que el negocio y los usuarios querían resolver? Sé específico. <em>(Ejemplo:
+                Los usuarios encontraban el proceso de registro demasiado extenso y el 60% abandonaba antes de validar
+                su identidad. Necesitábamos reducir la fricción sin comprometer la seguridad.)</em></p>
+
+        <!-- Imagen de The Challenge / Actual State -->
+        <img src="https://picsum.photos/id/119/800/500" alt="Wireframes o estado anterior">
+
+        <h2>El Proceso & Estrategia</h2>
+        <p>No listes todas tus metodologías. Cuenta qué hiciste clave para resolver este problema específico. ¿Hiciste
+            entrevistas? ¿Creaste un flujo nuevo? ¿Probaste con prototipos de baja fidelidad?</p>
+
+        <ul>
+            <li><strong>Descubrimiento:</strong> Entrevistas con 10 usuarios actuales.</li>
+            <li><strong>Arquitectura:</strong> Reducción de 8 pantallas de registro a 3 pasos progresivos.</li>
+            <li><strong>Validación:</strong> Testing de usabilidad con prototipo interactivo en Figma.</li>
+        </ul>
+
+    </div>
+
+    <!-- Imagen Full Width (Aprovechar para diseños UI de alto impacto) -->
+    <div class="full-width-image">
+        <img src="https://picsum.photos/id/2/1920/800" alt="Diseños finales de UI integrados">
+    </div>
+
+    <div class="project-content">
+
+        <h2>La Solución (UI & Interacción)</h2>
+        <p>Muestra y explica las decisiones de diseño interfaz. ¿Cómo es el sistema de diseño? ¿Por qué usaste esos
+            componentes? Habla de la consistencia visual y la accesibilidad.</p>
+
+        <img src="https://picsum.photos/id/48/800/600" alt="Componentes de UI y Design System">
+
+        <h2>Resultados e Impacto</h2>
+        <p>Lo más importante para un perfil Senior. ¿Qué se logró con este rediseño o nuevo producto?</p>
+        <ul>
+            <li>Aumento del <strong>45% en la tasa de conversión</strong> del registro.</li>
+            <li>Reducción del 30% en tickets de soporte relacionados con onboarding.</li>
+            <li>Lanzamiento exitoso y adopción por más de 10,000 usuarios en el primer mes.</li>
+        </ul>
+
+        <h2>Aprendizajes</h2>
+        <p>Una breve reflexión de lo que aprendiste como diseñador o líder en este proyecto. ¿Qué harías diferente la
+            próxima vez?</p>
+
+    </div>
+
+    <!-- Next Project Navigation -->
+    <section class="next-project">
+        <span class="meta-label">Siguiente Proyecto</span>
+        <a href="#">
+            <h2>Lumina App</h2>
+        </a>
+    </section>
+
+    <!-- Footer Píldora -->
+    <footer>
+        <h2>¿Listo para colaborar?</h2>
+        <button id="footer-say-hi-btn" class="btn-primary">Envíame un mensaje</button>
+    </footer>
+
+    <!-- Scripts base (cursor, etc) -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
